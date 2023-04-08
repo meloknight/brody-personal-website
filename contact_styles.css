@@ -1,0 +1,91 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+
+.right-nav-link {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#contact-link {
+    color: rgb(252, 153, 150);
+}
+
+.nav-underline {
+    border: 1px solid rgb(204, 204, 204);
+} */
+
+
+
+/* BODY SECTION */
+.body-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    grid-template-rows: 2fr 4fr 1fr;
+}
+
+.grid-boxes {
+    /* border: 1px solid rgb(56, 56, 56);; */
+}
+
+#nav-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 5px;
+}
+
+#nav-box > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contact-card {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding-right: 9rem;
+    padding-bottom: 4rem;
+}
+
+#get-in-contact {
+    font-size: 3rem;
+    /* margin-left: -40px; */
+    margin-bottom: 20px;
+}
+
+.contact-lines {
+    margin: 5px;
+    margin-left: 40px;
+}
+
+#nav-box, #box-4, #box-7, #box-2, #box-5, #box-8 {
+    border-right: 2px solid rgb(56, 56, 56);
+}
+
+#nav-box, #box-2, #box-3, #box-4, #box-5, #box-6 {
+    border-bottom: 2px solid rgb(56, 56, 56); 
+}
+

@@ -1,0 +1,33 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+
+.right-nav-link {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-underline {
+    border: 1px solid rgb(204, 204, 204);
+    /* height: 1px; */
+}
+
+    

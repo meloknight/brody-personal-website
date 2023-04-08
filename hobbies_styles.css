@@ -1,0 +1,89 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    min-height: 30px;
+}
+
+.right-nav-link {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-underline {
+    border: 1px solid rgb(204, 204, 204);
+    /* height: 1px; */
+}
+
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: calc(100vh - 35px - 30px);
+    /* max-width: 100vw; */
+
+}
+
+.portfolio-card {
+    max-width: 35vw;
+    height: 20vh;
+    background-color: rgb(226, 226, 226);
+    margin: 3vh;
+    display: flex;
+    border-radius: 20px;
+    /* border: 2px solid rgb(204, 204, 204); */
+}
+
+.left-portfolio-card {
+    min-width: 300px;
+    height: 20vh;
+    /* background-color: red; */
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    border-radius: 20px;
+
+}
+
+.left-portfolio-card>img {
+    width: 300px;
+    translate: 0 -25%;
+}
+
+.right-portfolio-card {
+    /* width: 25vw; */
+    height: 20vh;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.right-portfolio-card > h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    margin-top: auto;
+    height: 30px;
+}

@@ -1,0 +1,160 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.body-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+article {
+    height: 100%;
+    background-color: rgb(201, 201, 201);
+    position: absolute;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+    gap: 4px;
+    font-size: 8rem;
+    transition: transform 1000ms ease;
+}
+
+article[data-status="unknown"] {
+    transform: translateX(-100vw);
+}
+
+article[data-status="after-right-click"]{
+    transform: translateX(-100%);
+}
+
+article[data-status="after-left-click"]{
+    transform: translateX(100%);
+}
+
+article[data-status="becoming-active-from-before-right-click"] {
+    transform: translateX(100%);
+    transition: none;
+}
+
+article[data-status="becoming-active-from-before-left-click"] {
+    transform: translateX(-100%);
+    transition: none;
+}
+
+.portfolio-page-section {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.title-section {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    display: grid;
+    place-items: center;
+    
+}
+
+.title-section > h1 {
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+.portfolio-nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.arrow-icons {
+    height: 70px;
+}
+
+.nav-item {
+    font-size: 5rem;
+    font-weight: 100;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.company-name {
+    font-size: 2rem;
+}
+
+.nav-item:hover {
+    color: rgb(252, 153, 150);
+}
+
+.portfolio-item-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    list-style-type: none;
+    word-wrap: normal;
+    text-transform: uppercase;
+}
+
+.portfolio-item-list > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-description {
+    padding: 20px;
+    line-height: 1.5;
+    display: grid;
+    place-items: center;
+}
+
+.portfolio-image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-image {
+    position: absolute;
+
+    width: 100%;
+}
+
+#insurance-image {
+    top: -150px;
+}
+
+#breathing-image {
+    top: -130px;
+}
+
+#arcade-image {
+    top: -800px;
+}
+
+#landscaping-image {
+    top: auto;
+}
+
+#dwarf-fortress-image {
+    top: -500px;
+}
